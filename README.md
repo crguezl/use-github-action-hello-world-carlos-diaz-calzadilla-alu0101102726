@@ -1,104 +1,75 @@
-# Título del Proyecto
+<h1 align="center"><project-name></h1>
 
-_Acá va un párrafo que describa lo que es el proyecto_
+<p align="center"><project-description></p>
 
-## Comenzando 🚀
+## Links
 
-_Estas instrucciones te permitirán obtener una copia del proyecto en funcionamiento en tu máquina local para propósitos de desarrollo y pruebas._
+- [Repo](https://github.com/Rohit19060/<project-name> "<project-name> Repo")
 
-Mira **Deployment** para conocer como desplegar el proyecto.
+- [Live](<Homepage url> "Live View")
 
+- [Bugs](https://github.com/Rohit19060/<project-name>/issues "Issues Page")
 
-### Pre-requisitos 📋
+- [API](<API Link> "API")
 
-_Que cosas necesitas para instalar el software y como instalarlas_
+## Screenshots
 
-```
-Da un ejemplo
-```
+![Home Page](/screenshots/1.png "Home Page")
 
-### Instalación 🔧
+![](/screenshots/2.png)
 
-_Una serie de ejemplos paso a paso que te dice lo que debes ejecutar para tener un entorno de desarrollo ejecutandose_
+![](/screenshots/3.png)
 
-_Dí cómo será ese paso_
+## Available Commands
 
-```
-Da un ejemplo
-```
+In the project directory, you can run:
 
-_Y repite_
+### `npm start" : "react-scripts start"`,
 
-```
-hasta finalizar
-```
+The app is built using `create-react-app` so this command Runs the app in Development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. You also need to run the server file as well to completely run the app. The page will reload if you make edits.
+You will also see any lint errors in the console.
 
-_Finaliza con un ejemplo de cómo obtener datos del sistema o como usarlos para una pequeña demo_
+### `"npm run build": "react-scripts build"`,
 
-## Ejecutando las pruebas ⚙️
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes. Your app will be ready to deploy!
 
-_Explica como ejecutar las pruebas automatizadas para este sistema_
+### `"npm run test": "react-scripts test"`,
 
-### Analice las pruebas end-to-end 🔩
+Launches the test runner in the interactive watch mode.
 
-_Explica que verifican estas pruebas y por qué_
+### `"npm run dev": "concurrently "nodemon server" "npm run start"`,
 
-```
-Da un ejemplo
-```
+For running the server and app together I am using concurrently this helps a lot in the MERN application as it runs both the server (client and server) concurrently. So you can work on them both together.
 
-### Y las pruebas de estilo de codificación ⌨️
+### `"serve": "node server"`
 
-_Explica que verifican estas pruebas y por qué_
+For running the server file on you can use this command.
 
-```
-Da un ejemplo
-```
+### `npm run serve`
 
-## Despliegue 📦
+## Built With
 
-_Agrega notas adicionales sobre como hacer deploy_
+- JavaScript
+- Node
+- NPM
+- Webpack
+- HTML
+- CSS
 
-## Construido con 🛠️
+## Future Updates
 
-_Menciona las herramientas que utilizaste para crear tu proyecto_
+- [ ] Reliable Storage
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - El framework web usado
-* [Maven](https://maven.apache.org/) - Manejador de dependencias
-* [ROME](https://rometools.github.io/rome/) - Usado para generar RSS
+## Author
 
-## Contribuyendo 🖇️
+**Rohit Jain**
 
-Por favor lee el [CONTRIBUTING.md](https://gist.github.com/villanuevand/xxxxxx) para detalles de nuestro código de conducta, y el proceso para enviarnos pull requests.
+- [Profile](https://github.com/rohit19060 "Rohit jain")
+- [Email](mailto:rohitjain19060@gmail.com?subject=Hi "Hi!")
+- [Website](https://kingtechnologies.in "Welcome")
 
-## Wiki 📖
+## 🤝 Support
 
-Puedes encontrar mucho más de cómo utilizar este proyecto en nuestra [Wiki](https://github.com/tu/proyecto/wiki)
+Contributions, issues, and feature requests are welcome!
 
-## Versionado 📌
-
-Usamos [SemVer](http://semver.org/) para el versionado. Para todas las versiones disponibles, mira los [tags en este repositorio](https://github.com/tu/proyecto/tags).
-
-## Autores ✒️
-
-_Menciona a todos aquellos que ayudaron a levantar el proyecto desde sus inicios_
-
-* **Andrés Villanueva** - *Trabajo Inicial* - [villanuevand](https://github.com/villanuevand)
-* **Fulanito Detal** - *Documentación* - [fulanitodetal](#fulanito-de-tal)
-
-También puedes mirar la lista de todos los [contribuyentes](https://github.com/your/project/contributors) quíenes han participado en este proyecto. 
-
-## Licencia 📄
-
-Este proyecto está bajo la Licencia (Tu Licencia) - mira el archivo [LICENSE.md](LICENSE.md) para detalles
-
-## Expresiones de Gratitud 🎁
-
-* Comenta a otros sobre este proyecto 📢
-* Invita una cerveza 🍺 o un café ☕ a alguien del equipo. 
-* Da las gracias públicamente 🤓.
-* etc.
-
-
-
----
+Give a ⭐️ if you like this project!
