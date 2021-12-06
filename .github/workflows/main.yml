@@ -18,4 +18,4 @@ jobs:
       - name: Use readme template create action
         uses: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726@main 
         with:
-         category: '${{ github.event.inputs.template }}'
+         template: '${{ github.event.inputs.template }}'
