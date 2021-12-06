@@ -22,10 +22,14 @@ jobs:
       uses: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726@main 
       with:
          template: '${{ github.event.inputs.template }}'
+  push:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
     - name: Commit and push update
       run: |-
         git config --global user.email "trc@action.com"
         git config --global user.name "template-readme-Bot"
         git add README.md
         git commit -m "Added Readme from GitHub Actions"
-        git push origin
+        git push
