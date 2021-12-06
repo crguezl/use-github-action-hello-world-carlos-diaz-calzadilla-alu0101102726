@@ -13,19 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Check out repo
-      uses: actions/checkout@v2      
-    - name: Clone templates folder
-      uses: actions/checkout@v2
-      with:
-        repository: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726
+      uses: actions/checkout@v2 
     - name: Run template action create
       uses: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726@main 
       with:
          template: '${{ github.event.inputs.template }}'
-  push:
-    needs: [build]
-    runs-on: ubuntu-latest
-    steps:
+         
     - name: Commit and push update
       run: |-
         git config --global user.email "trc@action.com"
