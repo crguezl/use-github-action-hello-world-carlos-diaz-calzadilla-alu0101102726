@@ -16,6 +16,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
       - name: Use readme template create action
-        uses: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726@main 
+        uses: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726/.github/workflows@main 
         with:
          template: '${{ github.event.inputs.template }}'
