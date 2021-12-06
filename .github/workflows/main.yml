@@ -17,7 +17,7 @@ jobs:
     - name: Clone templates folder
       uses: actions/checkout@v2
       with:
-        repository: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726/templates
+        repository: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726
     - name: Run template action create
       uses: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726@main 
       with:
@@ -26,6 +26,6 @@ jobs:
       run: |-
         git config --global user.email "trc@action.com"
         git config --global user.name "template-readme-Bot"
-        git add -A
+        git add README.md
         git commit -m "Added Readme from GitHub Actions"
         git push
