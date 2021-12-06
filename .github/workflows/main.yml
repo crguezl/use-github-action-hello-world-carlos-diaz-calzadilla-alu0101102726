@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # triggers manually
     inputs:
       template:
-        description: 'Use the template of the readme: modulo, practica o proyecto '     
+        description: 'Use the template of the readme that you have in your template folder '     
         required: true
         default: 'modulo'
 
