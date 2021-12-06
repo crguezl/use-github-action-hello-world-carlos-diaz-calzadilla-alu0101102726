@@ -28,4 +28,4 @@ jobs:
         git config --global user.name "template-readme-Bot"
         git add README.md
         git commit -m "Added Readme from GitHub Actions"
-        git push
+        git push origin
