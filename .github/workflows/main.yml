@@ -1,28 +1,33 @@
 name: Run readme-template create action
 
-# Controls when the workflow will run
 on:
-  workflow_dispatch:
-   inputs:
+  workflow_dispatch: # triggers manually
+    inputs:
       template:
         description: 'Use the template of the readme: modulo, practia o proyecto '     
         required: true
         default: 'modulo'
-  
+
 jobs:
-  uses-action:  
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Use readme template create action
-        uses: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726@main 
-        with:
+    - name: Check out repo
+      uses: actions/checkout@v2
+    - name: Use Node
+      uses: actions/setup-node@v2
+      with:
+        node-version: '14.x'
+    - name: Install node dependencies
+      run: npm install
+    - name: Run template action create
+      uses: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726@main 
+      with:
          template: '${{ github.event.inputs.template }}'
-      - name: Commit and push update
-        run: |-
-          git config --global user.email "trc@action.com"
-          git config --global user.name "template-readme-Bot"
-          git add -A
-          git commit -m "Added Readme from GitHub Actions"
-          git push
+    - name: Commit and push update
+      run: |-
+        git config --global user.email "trc@action.com"
+        git config --global user.name "template-readme-Bot"
+        git add -A
+        git commit -m "Added Readme from GitHub Actions"
+        git push
