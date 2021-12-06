@@ -4,7 +4,7 @@ on:
   workflow_dispatch: # triggers manually
     inputs:
       template:
-        description: 'Use the template of the readme: modulo, practia o proyecto '     
+        description: 'Use the template of the readme: modulo, practica o proyecto '     
         required: true
         default: 'modulo'
 
@@ -14,12 +14,6 @@ jobs:
     steps:
     - name: Check out repo
       uses: actions/checkout@v2
-    - name: Use Node
-      uses: actions/setup-node@v2
-      with:
-        node-version: '14.x'
-    - name: Install node dependencies
-      run: npm install
     - name: Run template action create
       uses: ULL-MII-SYTWS-2122/github-action-hello-world-carlos-diaz-calzadilla-alu0101102726@main 
       with:
