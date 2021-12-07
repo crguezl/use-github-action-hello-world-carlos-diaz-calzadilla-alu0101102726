@@ -1,5 +1,6 @@
 name: Run readme-template create action
 
+
 on:
   workflow_dispatch: # triggers manually
     inputs:
